@@ -2,7 +2,6 @@ Fixed-point image rescaling algorithm
 
 by Isaac Marino Bavaresco
 
-<pre>
 <p>
 I developed this algorithm to run efficiently on platforms without hardware floating-point support. Besides using fixed-point math it uses a different approach than any others I have seen.</p>
 <p>It can resize the image by factors from 0 to 2 (exclusive), where 1 keeps the original size. The scale factors for the X and Y directions can be different.</p>
@@ -31,6 +30,7 @@ I developed this algorithm to run efficiently on platforms without hardware floa
 
 <p>Algorithmically:</p>
 
+<pre>
 fws = 1.66666;// Width of the source pixel
 fwd = 1.0;    // Width of the destination pixel
 acc = 0;      // Accumulator
